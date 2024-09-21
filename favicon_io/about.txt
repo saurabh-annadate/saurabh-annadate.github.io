@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Stick No Bills
+- Font Author: Copyright 2021 The Stick No Bills Project Authors (https://github.com/mooniak/stick-no-bills-font)
+- Font Source: https://fonts.gstatic.com/s/sticknobills/v15/bWts7ffXZwHuAa9Uld-oEK4QKlxj9f9t_7uEmjcVv8Q7KriwKhcTKA.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
