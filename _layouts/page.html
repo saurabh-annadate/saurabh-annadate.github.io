@@ -12,6 +12,43 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/fevicon_io/favicon-16x16.png">
         <link rel="manifest" href="/fevicon_io/site.webmanifest">
 
+        {% if jekyll.environment == 'production' %}
+            <script> (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                 })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                 
+                 ga('create', 'UA-49948076-2', 'auto');
+                 ga('require', 'ipMeta', {
+                       apiKey: 'a36d7cd3e5792d6a4c11192920795a291a30819edecffee1e9ffe804382579bf',
+                       serviceProvider: 'dimension2',
+                       networkDomain: 'dimension3',
+                       networkType: 'dimension4'
+                   });
+                   ga('ipMeta:loadNetworkFields');
+                   ga('send', 'pageview');
+            </script>
+
+            <!-- Google Tag Manager -->
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-WHWCP9T8');</script>
+            <!-- End Google Tag Manager -->
+
+            <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-VTC96YRN06"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+            gtag('config', 'G-VTC96YRN06');
+            </script>
+
+            <script async src="https://ipmeta.io/plugin.js"></script>
+        {% endif %}
     </head>
 
     <body>
