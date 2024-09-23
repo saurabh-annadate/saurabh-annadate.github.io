@@ -2,43 +2,60 @@ body {
     background: rgb(255, 255, 255);
 }
 
+.header {height: 100px;
+  width: 90%;
+  display: flex;
+  background-color: whitesmoke;
+  margin:auto;
+}
+  
+
 .box {
-    display: flex;
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
+  height: 50px;
+  width: 50%;
+  display: inline-block;
+  padding-top: 5px;
   }
-  .myname {
-    font-family: 'Alegreya', 'Nunito', sans-serif;
-    font-style: bold;
-    font-size: 60px;
-    color: black;
-    margin-left: 5px;
-    
+
+#myname {
+    text-align: center;
 }
-.front_image {
-    padding: 0 20px 12px 35px; 
-    margin: 20px 30px 20px 60px; 
-    width: 35%;
-    
-}
-.about_me {
-    width: 40%;
-    margin: 20px 100px 10px 20px;
-    text-align: justify; 
-    overflow: hidden;
-    float: right;
-    font-size: 16px;
-    font-family: 'Alegreya', 'Nunito', sans-serif;
-    line-height: 20px;
-    color: rgb(120,120,120);
+h1 {
+  font-family: 'Alegreya', 'Nunito', sans-serif;
+  font-size: 50px;
+  color: black;}
+
+
+#showmenu {
+
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-right: 120px;
 }
 
 #showmenu li {
     font-family: 'Alegreya', 'Nunito', sans-serif;
-    display: inline-flex;
-    margin: 30px 20px 20px 5px;
     font-weight: 30px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.front_image {
+  padding: 0 20px 12px 35px; 
+  margin: 20px 30px 20px 60px; 
+  width: 35%;
+  display: inline-block;
+}
+.about_me {
+  width: 40%;
+  margin: 20px 100px 10px 20px;
+  text-align: justify; 
+  overflow: hidden;
+  float: right;
+  font-size: 16px;
+  font-family: 'Alegreya', 'Nunito', sans-serif;
+  line-height: 20px;
+  color: rgb(120,120,120);
 }
 
  /* Dropdown Button */
@@ -108,24 +125,25 @@ p {
 
 /* footer related stuff */
 footer {
-    margin: 50px auto;
-    align-items: center;
+    display: flex;
+    margin: 10px auto;
     height:70px;
     width: 90%;
     background-color: #267d52e6;
     color: #090808;
+    justify-content: space-around;
   }
   
-#footer li{
+footer div{
     text-align: center;
     display: inline-flex;
-    margin: 10px 80px; 
+    margin: 10px auto;
+    /* margin: 10px 80px;  */
     color:black;
+    justify-content: space-around;
   }
 
-  #footer li p{
-    color:black;
-  }
+  
   .social-icon {
     height: 30px; 
   }
