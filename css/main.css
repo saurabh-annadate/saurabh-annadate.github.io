@@ -2,11 +2,13 @@ body {
     background: rgb(255, 255, 255);
 }
 
-.header {height: 100px;
+.header {height: 150px;
   width: 90%;
   display: flex;
   background-color: whitesmoke;
   margin:auto;
+  background-image: url("../img/warming_stripes.svg");
+  background-size: contain;
 }
   
 
@@ -14,16 +16,17 @@ body {
   height: 50px;
   width: 50%;
   display: inline-block;
-  padding-top: 5px;
+  padding-top: 50px;
   }
 
 #myname {
     text-align: center;
+    
 }
 h1 {
   font-family: 'Alegreya', 'Nunito', sans-serif;
   font-size: 50px;
-  color: black;}
+  color: white;}
 
 
 #showmenu {
@@ -31,6 +34,7 @@ h1 {
   justify-content: space-between;
   padding-top: 30px;
   padding-right: 120px;
+  
 }
 
 #showmenu li {
@@ -38,8 +42,16 @@ h1 {
     font-weight: 30px;
     display: inline-block;
     margin-left: 20px;
+   
 }
 
+.dropbtn{
+  font-weight: bold;
+}
+#showmenu a {
+  color: black;
+  font-weight: bold;
+}
 .front_image {
   padding: 0 20px 12px 35px; 
   margin: 20px 30px 20px 60px; 
