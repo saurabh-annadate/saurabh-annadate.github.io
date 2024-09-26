@@ -1,29 +1,91 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Saurabh Annadate</title>
-		<link rel="stylesheet" type="text/css" href="./css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Saurabh Annadate!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:saurabh.annadate@iusspavia.it">email</a></li>
-        		<li><a href="https://github.com/saurabh-annadate">github.com/saurabh-annadate</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWCS 2025</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" id="home">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Welcome to WWCS 2025</h1>
+            <p>Your journey starts here</p>
+            <a href="#about" class="btn">Learn More</a>
+        </div>
+    </header>
+
+    <section class="content" id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>This is a brief overview of what the site is about. We are focused on providing excellent solutions in the field of web development and design.</p>
+        </div>
+    </section>
+
+    <section class="content bg-light" id="projects">
+        <div class="container">
+            <h2>Our Projects</h2>
+            <p>We have worked on numerous projects, from simple websites to complex web applications. Below are a few examples.</p>
+            <!-- Project Cards -->
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>Project 1 description goes here.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>Project 2 description goes here.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>Project 3 description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Feel free to reach out through our contact form below.</p>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 WWCS. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Smooth scrolling -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>
