@@ -15,7 +15,7 @@ body {
 
 /* Header Section */
 .header {
-    background-image: url('img/warming_stripes.svg');
+    background-image: url('./img/warming_stripes.svg');
     background-size: cover;
     background-position: center;
     color: #fff;
