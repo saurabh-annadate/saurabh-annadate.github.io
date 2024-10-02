@@ -42,7 +42,7 @@ nav ul li a:hover {
 
 #hero {
     height: 100vh;
-    background: url('hero-image.jpg') no-repeat center center/cover;
+    background: url('img/warming_stripes.svg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
