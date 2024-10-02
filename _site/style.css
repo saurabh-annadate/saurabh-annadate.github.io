@@ -24,7 +24,7 @@ header {
 nav ul {
     list-style: none;
     text-align: center;
-    margin-top: 15px;
+    font-size: 24px;
 }
 
 nav ul li {
@@ -77,24 +77,46 @@ nav ul li a:hover {
 }
 
 #hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgb(0, 0, 0);
+    height: 120vh;
+    color: rgb(255, 255, 255);
     text-align: center;
+
+    display: flex;               /* Enables Flexbox layout */
+    justify-content: space-between; /* Adds space between the two divs */
+    align-items: center;         /* Vertically aligns items in the center */
+    padding: 2  10px;
+    max-width: 100%;            /* Optional: Set a max width for the container */
+    margin: 0 auto; 
+    background-image: url(img/beautiful-cloudscape.jpg);
+    background-size: cover; /* Ensures the image covers the entire div */
+    background-position: center;
 }
 
+
 .hero-content h1 {
-    font-size: 4rem;
+    flex: 1;
+    font-size: 3.5rem;
     margin-bottom: 10px;
+    padding-left: 50px;
 }
 
 .hero-content h2 {
+    flex: 1;
     font-size: 2rem;
     font-weight: 300;
+    padding-left: 50px;
 }
 
+#about {
+    display: flex;               /* Enables Flexbox layout */
+    justify-content: space-between; /* Adds space between the two divs */
+    align-items: center;
+}
+.hero-image img {
+    max-width: 400px;            /* Adjust the image size */
+    height: auto;                /* Maintain aspect ratio */ 
+    padding-left: 50px;
+}
 .section {
     padding: 100px 20px;
     text-align: center;
