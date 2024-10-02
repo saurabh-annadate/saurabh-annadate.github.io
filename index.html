@@ -3,89 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WWCS 2025</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Your Personal Portfolio">
+    <meta name="keywords" content="Portfolio, Web Developer, Designer">
+    <meta name="author" content="Your Name">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header" id="home">
+    <header>
         <nav>
-            <ul class="nav-menu">
-                <li><a href="#home">Home</a></li>
+            <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work">Work</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <div class="hero">
-            <h1>Welcome to WWCS 2025</h1>
-            <p>Your journey starts here</p>
-            <a href="#about" class="btn">Learn More</a>
-        </div>
     </header>
 
-    <section class="content" id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p>This is a brief overview of what the site is about. We are focused on providing excellent solutions in the field of web development and design.</p>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Your Name</h1>
+            <h2>Web Developer & Designer</h2>
         </div>
     </section>
 
-    <section class="content bg-light" id="projects">
-        <div class="container">
-            <h2>Our Projects</h2>
-            <p>We have worked on numerous projects, from simple websites to complex web applications. Below are a few examples.</p>
-            <!-- Project Cards -->
-            <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Project 1</h3>
-                    <p>Project 1 description goes here.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 2</h3>
-                    <p>Project 2 description goes here.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Project 3</h3>
-                    <p>Project 3 description goes here.</p>
-                </div>
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>
+            I am a web developer and designer with a passion for creating beautiful, responsive, and user-friendly websites.
+            My work combines both aesthetic and technical aspects to create unique digital experiences.
+        </p>
+    </section>
+
+    <section id="work" class="section">
+        <h2>My Work</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>Short description of project 1.</p>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>Short description of project 2.</p>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>Short description of project 3.</p>
             </div>
         </div>
     </section>
 
-    <section class="content" id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Feel free to reach out through our contact form below.</p>
-            <form action="#">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>If you'd like to work together, feel free to reach out!</p>
+        <a href="mailto:yourname@email.com" class="contact-button">Get In Touch</a>
     </section>
 
-    <footer class="footer">
-        <p>&copy; 2025 WWCS. All Rights Reserved.</p>
+    <footer>
+        <p>&copy; 2024 Your Name | All Rights Reserved</p>
     </footer>
-
-    <!-- Smooth scrolling -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 </body>
 </html>
