@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Annadate – Climate & Remote Sensing Scientist</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🌍</span> Saurabh Annadate
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="pages/research.html" class="nav-link">Research</a></li>
+                <li><a href="pages/publications.html" class="nav-link">Publications</a></li>
+                <li><a href="pages/software.html" class="nav-link">Software</a></li>
+                <li><a href="pages/cv.html" class="nav-link">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero with Climate Stripes + Plume Particles -->
+    <header class="hero" id="hero">
+        <canvas id="climateStripes" class="hero-stripes"></canvas>
+        <canvas id="plumeCanvas" class="hero-particles"></canvas>
+        <div class="hero-gradient-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Climate Change· Atmospheric Modelling· Data Science</div>
+            <h1 class="hero-title">Saurabh Annadate</h1>
+            <p class="hero-subtitle">Understanding our changing planet through data</p>
+            <div class="hero-cta">
+                <a href="#about" class="btn-hero">
+                    About Me <i class="fas fa-arrow-down"></i>
+                </a>
+                <a href="pages/research.html" class="btn-hero-outline">
+                    View Research <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+            <!-- Animated temperature indicator -->
+            <div class="temp-indicator">
+                <div class="temp-bar">
+                    <div class="temp-fill" id="tempFill"></div>
+                </div>
+                <span class="temp-label">Global Temperature Anomaly: <strong>+1.2°C</strong></span>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+        <!-- Stripe legend -->
+        <!-- <div class="stripe-legend">
+            <span>1850</span>
+            <div class="stripe-legend-bar"></div>
+            <span>2024</span>
+        </div> -->
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <div class="profile-pic-wrapper">
+                        <img src="images/profile.jpg" alt="Saurabh Annadate" class="profile-pic">
+                    </div>
+                    <!-- Mini globe animation -->
+                    <!-- <div class="globe-container" id="globeContainer">
+                        <canvas id="miniGlobe" width="120" height="120"></canvas>
+                    </div> -->
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">
+                        <span class="title-icon">👋</span> About Me
+                    </h2>
+                    <div class="title-underline"></div>
+                        <p>
+                            I am a climate scientist and researcher at the 
+                            <a href="https://www.universityofgalway.ie/">University of Galway</a>, 
+                            working at the intersection of <strong>atmospheric modelling</strong> and 
+                            <strong>observations</strong>, with a focus on <strong>inverse modelling methods</strong>.
+                        </p>
+
+                        <p>
+                            My current research focuses on estimating greenhouse gas emissions using a top-down (inverse modelling) approach. 
+                            I study emissions of potent greenhouse gases both long-lived species (e.g., CFCs, HFCs, N<sub>2</sub>O) and short-lived species 
+                            (e.g., black carbon, propane).
+                        </p>
+
+                        <p>
+                            I received my Ph.D. in Atmospheric Science from Scuola Superiore Studi Pavia (IUSS), Italy in 2025, 
+                            and my integrated B.S.–M.S. in Physics from the Indian Institute of Science Education and Research (IISER) Mohali, India in 2021.
+                        </p>
+
+
+                    <div class="about-details">
+                        <div class="detail-group">
+                            <h3><i class="fas fa-flask"></i> Research Interests</h3>
+                            <ul class="tag-list">
+                                <li><span class="tag tag-fire">🔥 Emission Estimation</span></li>
+                                <li><span class="tag tag-atmos">🌫️ Air Quality</span></li>
+                                <li><span class="tag tag-satellite">🌡️ Climate Change</span></li>
+                                <li><span class="tag tag-climate">🛰️ Remote Sensing</span></li>
+                                <li><span class="tag tag-ml">🤖 Machine Learning</span></li>
+                            </ul>
+                        </div>
+                        <div class="detail-group">
+                            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                            <ul class="education-list">
+                                <li>
+                                    <div class="edu-icon">🎓</div>
+                                    <div>
+                                        <strong>Ph.D. Atmospheric Science, 2025</strong><br>
+                                        <span>Scuola Superiore Studi Pavia (IUSS), Italy</span>
+                                        <span>Università degli Studi di Urbino Carlo Bo, Italy</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="edu-icon">🎓</div>
+                                    <div>
+                                        <strong>B.S-M.S. Dual degree Physics, 2021</strong><br>
+                                        <span>Indian Institute of Science Education and Research (IISER) Mohali, India</span>
+                                    </div>
+                                </li>
+                                <!-- <li>
+                                    <div class="edu-icon">🎓</div>
+                                    <div>
+                                        <strong>B.S. Earth Science, 2017</strong><br>
+                                        <span>University Name</span>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <a href="https://github.com/saurabh-annadate" target="_blank" title="GitHub" class="social-github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=DygyyEMAAAAJ&hl=en" target="_blank" title="Google Scholar" class="social-scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <!-- <a href="https://twitter.com/yourusername" target="_blank" title="Twitter / X" class="social-twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a> -->
+                        <a href="https://www.linkedin.com/in/saurabh-annadate-phd-468897138/" target="_blank" title="LinkedIn" class="social-linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:saurabh.annadate@universityofgalway.ie" title="Email" class="social-email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://orcid.org/0000-0002-0426-5431" target="_blank" title="ORCID" class="social-orcid">
+                            <i class="fab fa-orcid"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Climate Data Visualization Banner -->
+    <!-- <section class="climate-banner">
+        <div class="container">
+            <div class="climate-stats">
+                <div class="stat-item">
+                    <div class="stat-icon">🌡️</div>
+                    <div class="stat-number" data-target="1.2">0</div>
+                    <div class="stat-unit">°C</div>
+                    <div class="stat-label">Global Warming Since 1880</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🔥</div>
+                    <div class="stat-number" data-target="6.8">0</div>
+                    <div class="stat-unit">M ha</div>
+                    <div class="stat-label">Avg. Annual Area Burned (US)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🌫️</div>
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-unit">%</div>
+                    <div class="stat-label">People Exposed to Unsafe Air</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">🛰️</div>
+                    <div class="stat-number" data-target="24">0</div>
+                    <div class="stat-unit">PB</div>
+                    <div class="stat-label">Earth Engine Data Catalog</div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Recent News Section -->
+    <section class="section news-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">📰</span> Recent News
+            </h2>
+            <div class="title-underline"></div>
+            <div class="news-timeline">
+                <div class="news-item">
+                    <div class="news-dot"></div>
+                    <div class="news-date">
+                        <span class="month">Dec</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="news-content">
+                        <p>🎉 New paper published in <em>Nature Communications</em>: 
+                        "<a href="#">Global assessment of wildfire smoke impacts on air quality</a>"</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-dot"></div>
+                    <div class="news-date">
+                        <span class="month">Oct</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="news-content">
+                        <p>🗣️ Invited talk at <a href="#">AGU Fall Meeting 2024</a> on satellite-based fire emissions</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-dot"></div>
+                    <div class="news-date">
+                        <span class="month">Aug</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="news-content">
+                        <p>🚀 Released <a href="#">SMOKE-Plumes v2.0</a> – open-source fire smoke tracking tool on Google Earth Engine</p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-dot"></div>
+                    <div class="news-date">
+                        <span class="month">Jun</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="news-content">
+                        <p>🏫 Started as Postdoctoral Researcher at <a href="#">Institution Name</a></p>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <div class="news-dot"></div>
+                    <div class="news-date">
+                        <span class="month">Mar</span>
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="news-content">
+                        <p>🏆 Awarded the <a href="#">NASA Earth Science Fellowship</a> for 2024-2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Research Section -->
+    <section class="section featured-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">🔬</span> Featured Research
+            </h2>
+            <div class="title-underline"></div>
+            <div class="featured-grid">
+                <!-- Card 1: Fire monitoring -->
+                <div class="featured-card fire-theme">
+                    <div class="card-image">
+                        <div class="card-image-placeholder fire-gradient">
+                            <div class="card-particles" id="fireParticles"></div>
+                            <i class="fas fa-fire-flame-curved"></i>
+                        </div>
+                        <div class="card-badge">Wildfire Science</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Satellite-Based Fire Monitoring</h3>
+                        <p>Near-real-time detection and emissions estimation from wildfires using MODIS, VIIRS, and Sentinel-2 multi-sensor fusion.</p>
+                        <div class="card-tags">
+                            <span>MODIS</span>
+                            <span>VIIRS</span>
+                            <span>Deep Learning</span>
+                        </div>
+                        <a href="pages/research.html" class="card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 2: Air Quality -->
+                <div class="featured-card air-theme">
+                    <div class="card-image">
+                        <div class="card-image-placeholder air-gradient">
+                            <div class="card-particles" id="smokeParticles"></div>
+                            <i class="fas fa-smog"></i>
+                        </div>
+                        <div class="card-badge">Air Quality</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Smoke Plume Modeling</h3>
+                        <p>Tracking wildfire smoke transport and estimating surface PM2.5 using satellite AOD, HYSPLIT trajectories, and ML models.</p>
+                        <div class="card-tags">
+                            <span>PM2.5</span>
+                            <span>HYSPLIT</span>
+                            <span>XGBoost</span>
+                        </div>
+                        <a href="pages/research.html" class="card-link">
+                            Learn more <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Card 3: Tools -->
+                <div class="featured-card tool-theme">
+                    <div class="card-image">
+                        <div class="card-image-placeholder tool-gradient">
+                            <i class="fas fa-earth-americas"></i>
+                        </div>
+                        <div class="card-badge">Open Source</div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Google Earth Engine Apps</h3>
+                        <p>Building accessible geospatial tools for environmental monitoring — fire tracking, air quality dashboards, and land cover mapping.</p>
+                        <div class="card-tags">
+                            <span>GEE</span>
+                            <span>JavaScript</span>
+                            <span>Python</span>
+                        </div>
+                        <a href="pages/software.html" class="card-link">
+                            View tools <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Climate Stripes Section -->
+    <section class="section stripes-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">🌡️</span> Climate Context
+            </h2>
+            <div class="title-underline"></div>
+            <p class="stripes-description">
+                Global temperature anomalies (1850–2024) visualized as warming stripes 
+                (<a href="https://showyourstripes.info/" target="_blank">#ShowYourStripes</a>). 
+                Each stripe represents one year — blue is cooler, red is warmer than the 20th-century average.
+            </p>
+            <div class="stripes-container">
+                <canvas id="interactiveStripes" class="interactive-stripes"></canvas>
+                <div class="stripes-tooltip" id="stripesTooltip"></div>
+            </div>
+            <div class="stripes-labels">
+                <span>1850</span>
+                <span>1900</span>
+                <span>1950</span>
+                <span>2000</span>
+                <span>2024</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plume Visualization Section -->
+    <section class="section plume-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="title-icon">🌫️</span> Smoke Plume Visualization
+            </h2>
+            <div class="title-underline"></div>
+            <div class="plume-showcase">
+                <div class="plume-visual">
+                    <canvas id="plumeVisualization" class="plume-canvas"></canvas>
+                    <div class="plume-controls">
+                        <button class="plume-btn active" data-wind="5">Light Wind</button>
+                        <button class="plume-btn" data-wind="15">Moderate Wind</button>
+                        <button class="plume-btn" data-wind="30">Strong Wind</button>
+                    </div>
+                </div>
+                <div class="plume-info">
+                    <h3>Interactive Gaussian Plume Model</h3>
+                    <p>
+                        This simplified Gaussian plume dispersion model illustrates how wind speed 
+                        affects the transport and dilution of wildfire smoke. The visualization 
+                        simulates PM2.5 concentration downwind from a fire source.
+                    </p>
+                    <ul class="plume-details">
+                        <li><strong>Model:</strong> Gaussian dispersion (Pasquill-Gifford)</li>
+                        <li><strong>Source:</strong> Point source wildfire emission</li>
+                        <li><strong>Variable:</strong> Wind speed (m/s)</li>
+                        <li><strong>Output:</strong> Relative PM2.5 concentration</li>
+                    </ul>
+                    <a href="pages/research.html" class="btn btn-primary">
+                        <i class="fas fa-microscope"></i> Read More About This Research
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>🌍 Saurabh Annadate</h3>
+                    <p>Postdoctoral Researcher<br>
+                    Department of Environmental Science<br>
+                    University / Institution Name</p>
+                </div>
+                <div class="footer-links">
+                    <div class="social-links">
+                        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+                        <a href="https://twitter.com/yourusername" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-stripes">
+                <canvas id="footerStripes"></canvas>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Saurabh Annadate · Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> · 
+                Climate data: <a href="https://berkeleyearth.org/" target="_blank">Berkeley Earth</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/climate-stripes.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

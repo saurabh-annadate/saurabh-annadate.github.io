@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research – Saurabh Annadate</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><span class="logo-icon">🌍</span> Saurabh Annadate</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="research.html" class="nav-link active">Research</a></li>
+                <li><a href="publications.html" class="nav-link">Publications</a></li>
+                <li><a href="software.html" class="nav-link">Software</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>Research</h1>
+            <p>Remote sensing, fire science, and atmospheric modeling</p>
+        </div>
+    </div>
+
+    <section class="page-content">
+        <div class="container">
+            <p style="color:var(--text-medium);margin-bottom:3rem;font-size:1.02rem;max-width:800px;">
+                My research combines satellite remote sensing, computational modeling, and machine learning
+                to understand wildfires, air pollution, and land use change at global scales.
+            </p>
+
+            <div class="research-project">
+                <div class="research-img">
+                    <div class="research-img-placeholder fire-gradient"><i class="fas fa-fire-flame-curved"></i></div>
+                </div>
+                <div class="research-info">
+                    <h3>🔥 Satellite-Based Wildfire Monitoring</h3>
+                    <p>Developing near-real-time algorithms for active fire detection and burned area mapping using MODIS, VIIRS, and Sentinel-2 multi-sensor fusion with deep learning.</p>
+                    <p>Our methods improve detection in cloud-covered and tropical regions where traditional thresholding approaches underperform.</p>
+                    <div class="pub-links">
+                        <a href="#"><i class="fas fa-file-alt"></i> Liu et al. (2024)</a>
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                        <a href="#"><i class="fas fa-database"></i> Dataset</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-project">
+                <div class="research-img">
+                    <div class="research-img-placeholder air-gradient"><i class="fas fa-smog"></i></div>
+                </div>
+                <div class="research-info">
+                    <h3>🌫️ Smoke Plume Transport & Air Quality</h3>
+                    <p>Using satellite AOD, HYSPLIT trajectories, and chemical transport models to track wildfire smoke and estimate surface-level PM2.5 concentrations with XGBoost and neural networks.</p>
+                    <p>We combine GOES-16 geostationary observations with TROPOMI column measurements for hourly smoke tracking across North America.</p>
+                    <div class="pub-links">
+                        <a href="#"><i class="fas fa-file-alt"></i> Liu et al. (2023)</a>
+                        <a href="#"><i class="fas fa-globe"></i> Web App</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-project">
+                <div class="research-img">
+                    <div class="research-img-placeholder tool-gradient"><i class="fas fa-leaf"></i></div>
+                </div>
+                <div class="research-info">
+                    <h3>🌿 Land Use & Land Cover Change</h3>
+                    <p>Mapping deforestation and agricultural expansion using Landsat/Sentinel time-series classification with temporal CNNs and random forests on Google Earth Engine.</p>
+                    <div class="pub-links">
+                        <a href="#"><i class="fas fa-file-alt"></i> Paper (2023)</a>
+                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="research-project">
+                <div class="research-img">
+                    <div class="research-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#2d4a7a,#457b9d)"><i class="fas fa-code"></i></div>
+                </div>
+                <div class="research-info">
+                    <h3>🛠️ Open-Source Geospatial Tools</h3>
+                    <p>Building accessible applications on Google Earth Engine and Python for environmental monitoring. I believe open science accelerates discovery and enables equitable access to data.</p>
+                    <div class="pub-links">
+                        <a href="software.html"><i class="fas fa-cube"></i> Software Page</a>
+                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2024 Saurabh Annadate · Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>
