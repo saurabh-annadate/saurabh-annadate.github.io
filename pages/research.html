@@ -4,214 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research – Saurabh Annadate</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Research projects of Saurabh Annadate: greenhouse gas emissions, nitrous oxide, inverse modelling.">
+    <meta name="color-scheme" content="light dark">
+    <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../images/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Italiana&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/site.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <nav id="navbar" class="scrolled">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo"><span class="logo-icon">🌍</span> Saurabh Annadate</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="site-header" id="siteHeader">
+        <nav class="nav wrap" aria-label="Main">
+            <a href="../index.html" class="brand">
+                <span class="brand-mark" aria-hidden="true"><span class="brand-s">S</span><span class="brand-a">A</span></span>
+                Saurabh Annadate
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+            </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="../index.html" class="nav-link">Home</a></li>
-                <li><a href="research.html" class="nav-link active">Research</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="software.html" class="nav-link">Software</a></li>
-                <li><a href="../docs/annadate_cv.pdf" class="nav-link">CV</a></li>
+                <li><a href="research.html" aria-current="page">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="../docs/annadate_cv.pdf" class="nav-cv">CV</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="page-header">
-        <div class="container">
+    <main id="main">
+
+        <section class="page-hero wrap">
+            <p class="eyebrow">Research</p>
             <h1>Research</h1>
-            <p>Atmospheric modeling, Greenhouse gas emissions, Inverse modeling</p>
-        </div>
-    </div>
+            <p class="section-lede">I estimate greenhouse gas emissions from the top down, combining atmospheric observations with transport and inverse models to see what is really being emitted and to test national inventories and climate policy.</p>
+        </section>
+        <canvas id="footerStripes" class="page-stripes" aria-hidden="true"></canvas>
 
-    <div class="under-construction">
-    <div class="uc-graphic">
-        <div class="uc-icon">🚧</div>
-        <div class="uc-bar">
-            <div class="uc-progress"></div>
-        </div>
-        <div class="uc-dots">
-            <span></span><span></span><span></span>
-        </div>
-    </div>
+        <section class="page-body wrap">
+            <div class="projects">
 
-    <h2>Page Under Construction</h2>
-    <p>
-        This page is currently being updated and is not yet available.
-        Please check back soon, new content will be added shortly.
-    </p>
-</div>
-
-<style>
-.under-construction{
-    max-width: 700px;
-    margin: 60px auto;
-    padding: 40px 30px;
-    text-align: center;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    font-family: Arial, sans-serif;
-}
-
-.under-construction h2{
-    font-size: 1.8rem;
-    margin: 15px 0 10px 0;
-}
-
-.under-construction p{
-    font-size: 1.05rem;
-    opacity: 0.9;
-    line-height: 1.5;
-}
-
-.uc-graphic{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 20px;
-}
-
-.uc-icon{
-    font-size: 3rem;
-    animation: bounce 1.4s infinite;
-}
-
-.uc-bar{
-    width: 220px;
-    height: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.25);
-}
-
-.uc-progress{
-    height: 100%;
-    width: 45%;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #ffb703, #fb8500);
-    animation: loading 2.5s infinite;
-}
-
-.uc-dots span{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 4px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.6);
-    animation: blink 1.2s infinite;
-}
-
-.uc-dots span:nth-child(2){
-    animation-delay: 0.2s;
-}
-.uc-dots span:nth-child(3){
-    animation-delay: 0.4s;
-}
-
-@keyframes loading{
-    0% { transform: translateX(-100%); }
-    50% { transform: translateX(80%); }
-    100% { transform: translateX(-100%); }
-}
-
-@keyframes blink{
-    0%, 100% { opacity: 0.2; transform: scale(0.8); }
-    50% { opacity: 1; transform: scale(1.2); }
-}
-
-@keyframes bounce{
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-}
-</style>
-
-    <!-- <section class="page-content">
-        <div class="container">
-            <p style="color:var(--text-medium);margin-bottom:3rem;font-size:1.02rem;max-width:800px;">
-                My research combines satellite remote sensing, computational modeling, and machine learning
-                to understand wildfires, air pollution, and land use change at global scales.
-            </p>
-
-            <div class="research-project">
-                <div class="research-img">
-                    <div class="research-img-placeholder fire-gradient"><i class="fas fa-fire-flame-curved"></i></div>
-                </div>
-                <div class="research-info">
-                    <h3>🔥 Satellite-Based Wildfire Monitoring</h3>
-                    <p>Developing near-real-time algorithms for active fire detection and burned area mapping using MODIS, VIIRS, and Sentinel-2 multi-sensor fusion with deep learning.</p>
-                    <p>Our methods improve detection in cloud-covered and tropical regions where traditional thresholding approaches underperform.</p>
-                    <div class="pub-links">
-                        <a href="#"><i class="fas fa-file-alt"></i> Liu et al. (2024)</a>
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
-                        <a href="#"><i class="fas fa-database"></i> Dataset</a>
+                <article class="card project">
+                    <div class="project-side">
+                        <span class="project-badge">Current project</span>
+                        <h2>ENCORE</h2>
+                        <a class="text-link" href="https://www.macehead.org/project/encore/" target="_blank" rel="noopener">Project page <span aria-hidden="true">→</span></a>
                     </div>
-                </div>
-            </div>
-
-            <div class="research-project">
-                <div class="research-img">
-                    <div class="research-img-placeholder air-gradient"><i class="fas fa-smog"></i></div>
-                </div>
-                <div class="research-info">
-                    <h3>🌫️ Smoke Plume Transport & Air Quality</h3>
-                    <p>Using satellite AOD, HYSPLIT trajectories, and chemical transport models to track wildfire smoke and estimate surface-level PM2.5 concentrations with XGBoost and neural networks.</p>
-                    <p>We combine GOES-16 geostationary observations with TROPOMI column measurements for hourly smoke tracking across North America.</p>
-                    <div class="pub-links">
-                        <a href="#"><i class="fas fa-file-alt"></i> Liu et al. (2023)</a>
-                        <a href="#"><i class="fas fa-globe"></i> Web App</a>
+                    <div class="project-body">
+                        <p>
+                            At the University of Galway I work on ENCORE, a project hosted at the Mace Head atmospheric research station
+                            on the west coast of Ireland. My focus is nitrous oxide (N<sub>2</sub>O), a long-lived greenhouse gas and the
+                            leading ozone-depleting emission today.
+                        </p>
+                        <p>
+                            I use atmospheric N<sub>2</sub>O observations together with transport and inverse modelling to estimate
+                            emissions and how they change over time.
+                        </p>
+                        <ul class="theme-tags"><li>N<sub>2</sub>O</li><li>Mace Head</li><li>Inverse modelling</li></ul>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="research-project">
-                <div class="research-img">
-                    <div class="research-img-placeholder tool-gradient"><i class="fas fa-leaf"></i></div>
-                </div>
-                <div class="research-info">
-                    <h3>🌿 Land Use & Land Cover Change</h3>
-                    <p>Mapping deforestation and agricultural expansion using Landsat/Sentinel time-series classification with temporal CNNs and random forests on Google Earth Engine.</p>
-                    <div class="pub-links">
-                        <a href="#"><i class="fas fa-file-alt"></i> Paper (2023)</a>
-                        <a href="#"><i class="fab fa-github"></i> Code</a>
+                <article class="card project">
+                    <div class="project-side">
+                        <span class="project-badge">Horizon Europe</span>
+                        <h2>PARIS: Black carbon (WP7)</h2>
                     </div>
-                </div>
-            </div>
-
-            <div class="research-project">
-                <div class="research-img">
-                    <div class="research-img-placeholder" style="background:linear-gradient(135deg,#1a1a2e,#2d4a7a,#457b9d)"><i class="fas fa-code"></i></div>
-                </div>
-                <div class="research-info">
-                    <h3>🛠️ Open-Source Geospatial Tools</h3>
-                    <p>Building accessible applications on Google Earth Engine and Python for environmental monitoring. I believe open science accelerates discovery and enables equitable access to data.</p>
-                    <div class="pub-links">
-                        <a href="software.html"><i class="fas fa-cube"></i> Software Page</a>
-                        <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <div class="project-body">
+                        <p>
+                            In the Horizon Europe project PARIS, I work in Work Package 7 on black carbon, running
+                            inversions that estimate black carbon emissions over Europe from atmospheric observations.
+                        </p>
+                        <p>
+                            I led two of the work package's deliverables, D7.2 and D7.4.
+                        </p>
+                        <ul class="theme-tags"><li>Black carbon</li><li>European inversions</li><li>Led D7.2 &amp; D7.4</li></ul>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+                </article>
 
+                <article class="card project">
+                    <div class="project-side">
+                        <span class="project-badge is-past">Ph.D. research</span>
+                        <h2>Synthetic greenhouse gases</h2>
+                    </div>
+                    <div class="project-body">
+                        <p>
+                            Top-down emission estimates of HFCs, SF<sub>6</sub> and CFCs over Europe, compared with national inventories
+                            to test whether the EU F-gas regulation is cutting emissions as intended.
+                        </p>
+                        <ul class="theme-tags"><li>HFC-134a</li><li>SF<sub>6</sub></li><li>Policy evaluation</li></ul>
+                        <div class="project-links">
+                            <a class="text-link" href="https://doi.org/10.1186/s12302-025-01081-1">Environ. Sci. Eur. 2025 <span aria-hidden="true">→</span></a>
+                            <a class="text-link" href="https://doi.org/10.5194/acp-24-12465-2024">Atmos. Chem. Phys. 2024 <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project">
+                    <div class="project-side">
+                        <span class="project-badge is-past">Ph.D. research</span>
+                        <h2>Short-lived climate forcers</h2>
+                    </div>
+                    <div class="project-body">
+                        <p>
+                            Black carbon emissions from Europe and long-term trends in atmospheric propane,
+                            built on observations from the WMO-GAW station at Monte Cimone.
+                        </p>
+                        <ul class="theme-tags"><li>Black carbon</li><li>Propane</li><li>Long-term records</li></ul>
+                        <div class="project-links">
+                            <a class="text-link" href="https://doi.org/10.5194/acp-26-4105-2026">Atmos. Chem. Phys. 2026 <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card project">
+                    <div class="project-side">
+                        <span class="project-badge is-past">Methods</span>
+                        <h2>Inverse modelling methods</h2>
+                    </div>
+                    <div class="project-body">
+                        <p>
+                            Bayesian inversion frameworks that turn atmospheric measurements into emission maps,
+                            and how sensitive those estimates are to the choices inside the model.
+                        </p>
+                        <ul class="theme-tags"><li>Bayesian inversion</li><li>Transport models</li><li>Uncertainty</li></ul>
+                        <div class="project-links">
+                            <a class="text-link" href="https://doi.org/10.3390/atmos15010051">Atmosphere 2024 <span aria-hidden="true">→</span></a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Saurabh Annadate · Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+        <div class="wrap footer-grid">
+            <div>
+                <h2 class="footer-title">Let’s talk about emissions, data or collaboration.</h2>
+                <a class="btn btn-primary" href="mailto:saurabh.annadate@universityofgalway.ie">saurabh.annadate@universityofgalway.ie</a>
             </div>
+            <div class="footer-info">
+                <p>
+                    Centre for Climate and Air Pollution Studies, Ryan Institute<br>
+                    School of Natural Sciences, Physics<br>
+                    University of Galway, Ireland
+                </p>
+                <ul class="footer-links">
+                    <li><a href="https://scholar.google.com/citations?user=DygyyEMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                    <li><a href="https://orcid.org/0000-0002-0426-5431" target="_blank" rel="noopener">ORCID</a></li>
+                    <li><a href="https://github.com/saurabh-annadate" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/saurabh-annadate-phd-468897138/" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap footer-bottom">
+            <p>&copy; 2026 Saurabh Annadate · A lightweight site with no trackers, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> · Climate data: <a href="https://berkeleyearth.org/" target="_blank" rel="noopener">Berkeley Earth</a></p>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+
+    <script src="../js/climate-stripes.js"></script>
+    <script src="../js/site.js"></script>
 </body>
 </html>
