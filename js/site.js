@@ -1,5 +1,5 @@
 /**
- * Landing page interactions: sticky header state, mobile menu, reveal on scroll.
+ * Shared page interactions: sticky header state, mobile menu, reveal on scroll.
  */
 (function () {
     'use strict';

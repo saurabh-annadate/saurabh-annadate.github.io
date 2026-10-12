@@ -4,215 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications – Saurabh Annadate</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Peer-reviewed publications, conference presentations and training of Saurabh Annadate.">
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/site.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <nav id="navbar" class="scrolled">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo"><span class="logo-icon">🌍</span> Saurabh Annadate</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="site-header" id="siteHeader">
+        <nav class="nav wrap" aria-label="Main">
+            <a href="../index.html" class="brand">
+                <span class="brand-mark" aria-hidden="true"></span>
+                Saurabh Annadate
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+            </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="../index.html" class="nav-link">Home</a></li>
-                <li><a href="research.html" class="nav-link">Research</a></li>
-                <li><a href="publications.html" class="nav-link active">Publications</a></li>
-                <li><a href="software.html" class="nav-link">Software</a></li>
-                <li><a href="../docs/annadate_cv.pdf" class="nav-link">CV</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html" aria-current="page">Publications</a></li>
+                <li><a href="software.html">Software</a></li>
+                <li><a href="../docs/annadate_cv.pdf" class="nav-cv">CV</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="page-header">
-        <div class="container">
+    <main id="main">
+
+        <section class="page-hero wrap">
+            <p class="eyebrow">Publications</p>
             <h1>Publications</h1>
-            <p>Peer-reviewed journal articles and conference proceedings</p>
-        </div>
-    </div>
-
-    <section class="page-content">
-        <div class="container">
-            <p style="color:var(--text-medium);margin-bottom:1.5rem;">
-                <i class="fas fa-graduation-cap" style="color:var(--accent)"></i>
-                <a href="https://scholar.google.com/citations?user=DygyyEMAAAAJ&hl=en" target="_blank">Google Scholar Profile</a> &nbsp;|&nbsp;
-                <strong>*</strong> = equal contribution
-            </p>
-            <h2 class="pub-year">2026</h2>
-
-            <div class="pub-item">
-                <div class="pub-title">Observations of 1,2-dichloroethane from the AGAGE and NOAA networks and derived global and regional emissions</div>
-                <div class="pub-authors">Pitt, J. R., Rust, D., Ganesan, A. L., Western, L. M., Vollmer, M. K., Mühle, J., Bühlmann, T., Harth, C. M., Montzka, S. A., Hall, B. D., Vimont, I. J., Manning, A. J., Redington, A. L., Henne, S., Melo, D. B., <span class="highlight">Annadate, S.</span>, et al.</div>
-                <div class="pub-journal">Atmospheric Chemistry and Physics, 26(14), 10167–10195 (2026)</div>
-                <div class="pub-links">
-                    <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
-                    <a href="https://doi.org/10.5194/acp-26-10167-2026"><i class="fas fa-external-link-alt"></i> DOI</a>
-                </div>
+            <p class="section-lede">8 peer-reviewed articles, plus conference presentations and training. My name is in bold in each author list.</p>
+            <div class="page-meta">
+                <a href="https://scholar.google.com/citations?user=DygyyEMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar profile</a>
+                <a href="https://orcid.org/0000-0002-0426-5431" target="_blank" rel="noopener">ORCID</a>
             </div>
+        </section>
+        <canvas id="footerStripes" class="page-stripes" aria-hidden="true"></canvas>
 
-            <div class="pub-item">
-                <div class="pub-title">Long-term analysis of atmospheric propane over Southern Europe based on observations conducted at the WMO-GAW station of Monte Cimone</div>
-                <div class="pub-authors">Mancinelli, E., <span class="highlight">Annadate, S.</span>, Cristofanelli, P., Giostra, U., Maione, M., Reimann, S., and Arduini, J.</div>
-                <div class="pub-journal">Atmospheric Chemistry and Physics, 26(6), 4105–4129 (2026)</div>
-                <div class="pub-links">
-                    <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
-                    <a href="https://doi.org/10.5194/acp-26-4105-2026"><i class="fas fa-external-link-alt"></i> DOI</a>
-                </div>
+        <section class="page-body wrap">
+            <div class="pub-group">
+                <h2 class="pub-group-title">Peer-reviewed articles</h2>
+                <ol class="pubs">
+                    <li class="pub">
+                        <span class="pub-year">2026</span>
+                        <div>
+                            <a class="pub-title" href="https://doi.org/10.5194/acp-26-10167-2026">Observations of 1,2-dichloroethane from the AGAGE and NOAA networks and derived global and regional emissions</a>
+                            <p class="pub-meta">Pitt, J. R., Rust, D., Ganesan, A. L., Western, L. M., Vollmer, M. K., Mühle, J., Bühlmann, T., Harth, C. M., Montzka, S. A., Hall, B. D., Vimont, I. J., Manning, A. J., Redington, A. L., Henne, S., Melo, D. B., <strong>Annadate, S.</strong>, et al.</p>
+                            <p class="pub-meta"><em>Atmospheric Chemistry and Physics, 26(14), 10167–10195 (2026)</em></p>
+                            <div class="pub-actions"><a href="https://doi.org/10.5194/acp-26-10167-2026">DOI</a></div>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <span class="pub-year">2026</span>
+                        <div>
+                            <a class="pub-title" href="https://doi.org/10.5194/acp-26-4105-2026">Long-term analysis of atmospheric propane over Southern Europe based on observations conducted at the WMO-GAW station of Monte Cimone</a>
+                            <p class="pub-meta">Mancinelli, E., <strong>Annadate, S.</strong>, Cristofanelli, P., Giostra, U., Maione, M., Reimann, S., and Arduini, J.</p>
+                            <p class="pub-meta"><em>Atmospheric Chemistry and Physics, 26(6), 4105–4129 (2026)</em></p>
+                            <div class="pub-actions"><a href="https://doi.org/10.5194/acp-26-4105-2026">DOI</a></div>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <span class="pub-year">2025</span>
+                        <div>
+                            <a class="pub-title" href="https://doi.org/10.1186/s12302-025-01081-1">Monitoring the impact of EU F-gas regulation on HFC-134a emissions through a comparison of top-down and bottom-up estimates</a>
+                            <p class="pub-meta"><strong>Annadate, S.</strong>, Mancinelli, E., Gonella, B., Moricci, F., O’Doherty, S., Stanley, K., Young, D., Vollmer, M. K., Cesari, R., Falasca, S., et al.</p>
+                            <p class="pub-meta"><em>Environmental Sciences Europe, 37(1), 1–12 (2025)</em></p>
+                            <div class="pub-actions"><a href="https://doi.org/10.1186/s12302-025-01081-1">DOI</a></div>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <span class="pub-year">2024</span>
+                        <div>
+                            <a class="pub-title" href="https://doi.org/10.1016/j.scitotenv.2024.177713">Emissions of climate-altering species from open vegetation fires in the Mediterranean region: A review on methods and data</a>
+                            <p class="pub-meta">Hundal, R. A., <strong>Annadate, S.</strong>, Cesari, R., Collalti, A., Maione, M., and Cristofanelli, P.</p>
+                            <p class="pub-meta"><em>Science of The Total Environment, 957, 177713 (2024)</em></p>
+                            <div class="pub-actions"><a href="https://doi.org/10.1016/j.scitotenv.2024.177713">DOI</a></div>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <span class="pub-year">2024</span>
+                        <div>
+                            <a class="pub-title" href="https://doi.org/10.5194/acp-24-12465-2024">A global re-analysis of regionally resolved emissions and atmospheric mole fractions of SF<sub>6</sub> for the period 2005–2021</a>
+                            <p class="pub-meta">Vojta, M., Plach, A., <strong>Annadate, S.</strong>, Park, S., Lee, G., Purohit, P., Lindl, F., Lan, X., Muhle, J., Thompson, R. L., and Stohl, A.</p>
+                            <p class="pub-meta"><em>Atmospheric Chemistry and Physics, 24(21), 12465–12493 (2024)</em></p>
+                            <div class="pub-actions"><a href="https://doi.org/10.5194/acp-24-12465-2024">DOI</a></div>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <span class="pub-year">2024</span>
+                        <div>
+                            <a class="pub-title" href="https://doi.org/10.3390/atmos15010051">A sensitivity study of a Bayesian inversion model used to estimate emissions of synthetic greenhouse gases at the European scale</a>
+                            <p class="pub-meta"><strong>Annadate, S.</strong>, Falasca, S., Cesari, R., Giostra, U., Maione, M., and Arduini, J.</p>
+                            <p class="pub-meta"><em>Atmosphere, 15(1), 51 (2024)</em></p>
+                            <div class="pub-actions"><a href="https://www.mdpi.com/2073-4433/15/1/51/pdf?version=1704261833">PDF</a><a href="https://doi.org/10.3390/atmos15010051">DOI</a></div>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <span class="pub-year">2022</span>
+                        <div>
+                            <a class="pub-title" href="https://doi.org/10.1016/j.envpol.2021.118310">Will open waste burning become India’s largest air pollution source?</a>
+                            <p class="pub-meta">Sharma, G., <strong>Annadate, S.</strong>, and Sinha, B.</p>
+                            <p class="pub-meta"><em>Environmental Pollution, 292, 118310 (2022)</em></p>
+                            <div class="pub-actions"><a href="https://www.sciencedirect.com/science/article/pii/S0269749121018923/pdfft?md5=5df286fad4788480366554a30efb1dd9&pid=1-s2.0-S0269749121018923-main.pdf">PDF</a><a href="https://doi.org/10.1016/j.envpol.2021.118310">DOI</a></div>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <span class="pub-year">2021</span>
+                        <div>
+                            <a class="pub-title" href="https://doi.org/10.1016/j.aeaoa.2021.100118">RTEII: A new high-resolution (0.1° × 0.1°) road transport emission inventory for India of 74 speciated NMVOCs, CO, NO<sub>x</sub>, NH<sub>3</sub>, CH<sub>4</sub>, CO<sub>2</sub>, PM<sub>2.5</sub> reveals massive overestimation of NO<sub>x</sub> and CO and missing nitromethane emissions by existing inventories</a>
+                            <p class="pub-meta">Hakkim, H., Kumar, A., <strong>Annadate, S.</strong>, Sinha, B., and Sinha, V.</p>
+                            <p class="pub-meta"><em>Atmospheric Environment: X, 11, 100118 (2021)</em></p>
+                            <div class="pub-actions"><a href="https://www.sciencedirect.com/science/article/pii/S2590162121000186/pdfft?md5=df9b6195c5ff78eef3a0669b980dcf62&pid=1-s2.0-S2590162121000186-main.pdf">PDF</a><a href="https://doi.org/10.1016/j.aeaoa.2021.100118">DOI</a></div>
+                        </div>
+                    </li>
+                </ol>
             </div>
-
-            <!-- <h2 class="pub-year">2024</h2>
-
-            <div class="pub-item">
-                <div class="pub-title">Global assessment of wildfire smoke impacts on air quality using satellite observations and chemical transport modeling</div>
-                <div class="pub-authors"><span class="highlight">Saurabh Annadate</span>, Collaborator A., Collaborator B., Advisor C.</div>
-                <div class="pub-journal">Nature Communications, 15, 1234. doi: 10.1038/s41467-024-00000-0</div>
-                <div class="pub-links">
-                    <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
-                    <a href="#"><i class="fas fa-external-link-alt"></i> DOI</a>
-                    <a href="#"><i class="fab fa-github"></i> Code</a>
-                    <a href="#"><i class="fas fa-database"></i> Data</a>
-                </div>
-            </div> -->
-
-            <h2 class="pub-year">2025</h2>
-
-            <div class="pub-item">
-                <div class="pub-title">Monitoring the impact of EU F-gas regulation on HFC-134a emissions through a comparison of top-down and bottom-up estimates</div>
-                <div class="pub-authors"><span class="highlight">Annadate, S.</span>, Mancinelli, E., Gonella, B., Moricci, F., O’Doherty, S., Stanley, K., Young, D., Vollmer, M. K., Cesari, R., Falasca, S., et al.</div>
-                <div class="pub-journal">Environmental Sciences Europe, 37(1), 1–12 (2025)</div>
-                <div class="pub-links">
-                    <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
-                    <a href="https://doi.org/10.1186/s12302-025-01081-1"><i class="fas fa-external-link-alt"></i> DOI</a>
-                </div>
+            <div class="pub-group">
+                <h2 class="pub-group-title">Conference Presentations</h2>
+                <ol class="pubs pubs-plain">
+                    <li class="pub">
+                        <div>
+                            <span class="pub-title-text">Black Carbon emissions from Europe</span>
+                            <p class="pub-meta"><span class="highlight">Oral Presentation</span></p>
+                            <p class="pub-meta"><em>European Aerosol Conference (EAC 2025), Lecce, Italy — June 2025</em></p>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <div>
+                            <span class="pub-title-text">Black Carbon emissions from Europe</span>
+                            <p class="pub-meta"><span class="highlight">Poster Presentation</span></p>
+                            <p class="pub-meta"><em>21st International Workshop on Greenhouse Gas Measurements from Space (IWGGMS-21), Takamatsu, Japan — June 2025</em></p>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <div>
+                            <span class="pub-title-text">Estimates of HFC-134a Emissions over Europe informed by observations show a recent increase</span>
+                            <p class="pub-meta"><span class="highlight">Oral Presentation</span></p>
+                            <p class="pub-meta"><em>European Geosciences Union (EGU) General Assembly, April 2024</em></p>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <div>
+                            <span class="pub-title-text">Top-down Italian emissions of HFC-134a: 15 years trend and a comparison with the Italian national inventory reports</span>
+                            <p class="pub-meta"><span class="highlight">Oral Presentation</span></p>
+                            <p class="pub-meta"><em>PARIS – Horizon Europe Project Annual Meeting, Bristol, UK, January 2024</em></p>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <div>
+                            <span class="pub-title-text">Long-term emission estimates of radiatively active species at the regional scale using inverse modelling techniques</span>
+                            <p class="pub-meta"><span class="highlight">Poster Presentation</span></p>
+                            <p class="pub-meta"><em>GEIA (Global Emissions InitiAtive) 20th Conference, Brussels, Belgium, June 2023</em></p>
+                        </div>
+                    </li>
+                </ol>
             </div>
-
-            <h2 class="pub-year">2024</h2>
-
-            <div class="pub-item">
-                <div class="pub-title">Emissions of climate-altering species from open vegetation fires in the Mediterranean region: A review on methods and data</div>
-                <div class="pub-authors">Hundal, R. A., <span class="highlight">Annadate, S.</span>, Cesari, R., Collalti, A., Maione, M., and Cristofanelli, P.</div>
-                <div class="pub-journal">Science of The Total Environment, 957, 177713 (2024)</div>
-                <div class="pub-links">
-                    <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
-                    <a href="https://doi.org/10.1016/j.scitotenv.2024.177713"><i class="fas fa-external-link-alt"></i> DOI</a>
-                </div>
+            <div class="pub-group">
+                <h2 class="pub-group-title">Workshops & Training</h2>
+                <ol class="pubs pubs-plain">
+                    <li class="pub">
+                        <div>
+                            <span class="pub-title-text">DOSC 2025: Debugging and Optimization of Scientific Applications</span>
+                            <p class="pub-meta"><span class="highlight">CINECA</span></p>
+                            <p class="pub-meta"><em>Bologna, Italy — March 2025</em></p>
+                            <div class="pub-actions"><a href="../docs/Cineca_DOSA_certificate.pdf">Certificate</a></div>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <div>
+                            <span class="pub-title-text">AMIGO: Atmospheric chemistry modeling, data assimilation, inverse modeling, and model evaluation</span>
+                            <p class="pub-meta"><span class="highlight">BIRA-IASB</span></p>
+                            <p class="pub-meta"><em>Belgium — June 2023</em></p>
+                            <div class="pub-actions"><a href="../docs/GEIA 2023 Group Photo.jpeg">Group Photo</a></div>
+                        </div>
+                    </li>
+                    <li class="pub">
+                        <div>
+                            <span class="pub-title-text">DARE UK and CLASS International Summer School 2022</span>
+                            <p class="pub-meta"><span class="highlight">Summer School</span></p>
+                            <p class="pub-meta"><em>Southampton, UK — July 2022</em></p>
+                            <div class="pub-actions"><a href="../docs/UK_DARE_certificate_SA.pdf">Certificate</a></div>
+                        </div>
+                    </li>
+                </ol>
             </div>
+        </section>
 
-            <div class="pub-item">
-                <div class="pub-title">A global re-analysis of regionally resolved emissions and atmospheric mole fractions of SF<sub>6</sub> for the period 2005–2021</div>
-                <div class="pub-authors">Vojta, M., Plach, A., <span class="highlight">Annadate, S.</span>, Park, S., Lee, G., Purohit, P., Lindl, F., Lan, X., Muhle, J., Thompson, R. L., and Stohl, A.</div>
-                <div class="pub-journal">Atmospheric Chemistry and Physics, 24(21), 12465–12493 (2024)</div>
-                <div class="pub-links">
-                    <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
-                    <a href="https://doi.org/10.5194/acp-24-12465-2024"><i class="fas fa-external-link-alt"></i> DOI</a>
-                </div>
-            </div>
+    </main>
 
-            <div class="pub-item">
-                <div class="pub-title">A sensitivity study of a Bayesian inversion model used to estimate emissions of synthetic greenhouse gases at the European scale</div>
-                <div class="pub-authors"><span class="highlight">Annadate, S.</span>, Falasca, S., Cesari, R., Giostra, U., Maione, M., and Arduini, J.</div>
-                <div class="pub-journal">Atmosphere, 15(1), 51 (2024)</div>
-                <div class="pub-links">
-                    <a href="https://www.mdpi.com/2073-4433/15/1/51/pdf?version=1704261833"><i class="fas fa-file-pdf"></i> PDF</a>
-                    <a href="https://doi.org/10.3390/atmos15010051"><i class="fas fa-external-link-alt"></i> DOI</a>
-                </div>
-            </div>
-
-            <h2 class="pub-year">2022</h2>
-
-            <div class="pub-item">
-                <div class="pub-title">Will open waste burning become India’s largest air pollution source?</div>
-                <div class="pub-authors">Sharma, G., <span class="highlight">Annadate, S.</span>, and Sinha, B.</div>
-                <div class="pub-journal">Environmental Pollution, 292, 118310 (2022)</div>
-                <div class="pub-links">
-                    <a href="https://www.sciencedirect.com/science/article/pii/S0269749121018923/pdfft?md5=5df286fad4788480366554a30efb1dd9&pid=1-s2.0-S0269749121018923-main.pdf"><i class="fas fa-file-pdf"></i> PDF</a>
-                    <a href="https://doi.org/10.1016/j.envpol.2021.118310"><i class="fas fa-external-link-alt"></i> DOI</a>
-                </div>
-            </div>
-
-            <h2 class="pub-year">2021</h2>
-
-            <div class="pub-item">
-                <div class="pub-title">RTEII: A new high-resolution (0.1° × 0.1°) road transport emission inventory for India of 74 speciated NMVOCs, CO, NO<sub>x</sub>, NH<sub>3</sub>, CH<sub>4</sub>, CO<sub>2</sub>, PM<sub>2.5</sub> reveals massive overestimation of NO<sub>x</sub> and CO and missing nitromethane emissions by existing inventories</div>
-                <div class="pub-authors">Hakkim, H., Kumar, A., <span class="highlight">Annadate, S.</span>, Sinha, B., and Sinha, V.</div>
-                <div class="pub-journal">Atmospheric Environment: X, 11, 100118 (2021)</div>
-                <div class="pub-links">
-                    <a href="https://www.sciencedirect.com/science/article/pii/S2590162121000186/pdfft?md5=df9b6195c5ff78eef3a0669b980dcf62&pid=1-s2.0-S2590162121000186-main.pdf"><i class="fas fa-file-pdf"></i> PDF</a>
-                    <a href="https://doi.org/10.1016/j.aeaoa.2021.100118"><i class="fas fa-external-link-alt"></i> DOI</a>
-                </div>
-            </div>
-
-
-            <h2 class="pub-year">Conference Presentations</h2>
-            <div class="pub-item">
-                <div class="pub-title">Black Carbon emissions from Europe</div>
-                <div class="pub-authors"><span class="highlight">Oral Presentation</span></div>
-                <div class="pub-journal">European Aerosol Conference (EAC 2025), Lecce, Italy — June 2025</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">Black Carbon emissions from Europe</div>
-                <div class="pub-authors"><span class="highlight">Poster Presentation</span></div>
-                <div class="pub-journal">21st International Workshop on Greenhouse Gas Measurements from Space (IWGGMS-21), Takamatsu, Japan — June 2025</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">Estimates of HFC-134a Emissions over Europe informed by observations show a recent increase</div>
-                <div class="pub-authors"><span class="highlight">Oral Presentation</span></div>
-                <div class="pub-journal">European Geosciences Union (EGU) General Assembly, April 2024</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">Top-down Italian emissions of HFC-134a: 15 years trend and a comparison with the Italian national inventory reports</div>
-                <div class="pub-authors"><span class="highlight">Oral Presentation</span></div>
-                <div class="pub-journal">PARIS – Horizon Europe Project Annual Meeting, Bristol, UK, January 2024</div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">Long-term emission estimates of radiatively active species at the regional scale using inverse modelling techniques</div>
-                <div class="pub-authors"><span class="highlight">Poster Presentation</span></div>
-                <div class="pub-journal">GEIA (Global Emissions InitiAtive) 20th Conference, Brussels, Belgium, June 2023</div>
-            </div>
-
-
-            <h2 class="pub-year">Workshops & Training</h2>
-
-            <div class="pub-item">
-                <div class="pub-title">DOSC 2025: Debugging and Optimization of Scientific Applications</div>
-                <div class="pub-authors"><span class="highlight">CINECA</span></div>
-                <div class="pub-journal">Bologna, Italy — March 2025</div>
-                <div class="pub-links">
-                    <a href="../docs/Cineca_DOSA_certificate.pdf"><i class="fas fa-certificate"></i> Certificate</a>
-                </div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">AMIGO: Atmospheric chemistry modeling, data assimilation, inverse modeling, and model evaluation</div>
-                <div class="pub-authors"><span class="highlight">BIRA-IASB</span></div>
-                <div class="pub-journal">Belgium — June 2023</div>
-                <div class="pub-links">
-                    <a href="../docs/GEIA 2023 Group Photo.jpeg"><i class="fas fa-photo"></i> Group Photo</a>
-                </div>
-            </div>
-
-            <div class="pub-item">
-                <div class="pub-title">DARE UK and CLASS International Summer School 2022</div>
-                <div class="pub-authors"><span class="highlight">Summer School</span></div>
-                <div class="pub-journal">Southampton, UK — July 2022</div>
-                <div class="pub-links">
-                    <a href="../docs/UK_DARE_certificate_SA.pdf"><i class="fas fa-certificate"></i> Certificate</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Saurabh Annadate · Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+        <div class="wrap footer-grid">
+            <div>
+                <h2 class="footer-title">Let’s talk about emissions, data or collaboration.</h2>
+                <a class="btn btn-primary" href="mailto:saurabh.annadate@universityofgalway.ie">saurabh.annadate@universityofgalway.ie</a>
             </div>
+            <div class="footer-info">
+                <p>
+                    Centre for Climate and Air Pollution Studies, Ryan Institute<br>
+                    School of Natural Sciences, Physics<br>
+                    University of Galway, Ireland
+                </p>
+                <ul class="footer-links">
+                    <li><a href="https://scholar.google.com/citations?user=DygyyEMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                    <li><a href="https://orcid.org/0000-0002-0426-5431" target="_blank" rel="noopener">ORCID</a></li>
+                    <li><a href="https://github.com/saurabh-annadate" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/saurabh-annadate-phd-468897138/" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="wrap footer-bottom">
+            <p>&copy; 2026 Saurabh Annadate · A lightweight site with no trackers, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> · Climate data: <a href="https://berkeleyearth.org/" target="_blank" rel="noopener">Berkeley Earth</a></p>
         </div>
     </footer>
-    <script src="../js/main.js"></script>
+
+    <script src="../js/climate-stripes.js"></script>
+    <script src="../js/site.js"></script>
 </body>
 </html>

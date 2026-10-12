@@ -4,145 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Software – Saurabh Annadate</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="description" content="Software and code by Saurabh Annadate.">
+    <meta name="color-scheme" content="light dark">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/site.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <nav id="navbar" class="scrolled">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo"><span class="logo-icon">🌍</span> Saurabh Annadate</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <header class="site-header" id="siteHeader">
+        <nav class="nav wrap" aria-label="Main">
+            <a href="../index.html" class="brand">
+                <span class="brand-mark" aria-hidden="true"></span>
+                Saurabh Annadate
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
+                <span class="sr-only">Menu</span>
+                <span class="nav-toggle-bar" aria-hidden="true"></span>
+            </button>
             <ul class="nav-menu" id="navMenu">
-                <li><a href="../index.html" class="nav-link">Home</a></li>
-                <li><a href="research.html" class="nav-link active">Research</a></li>
-                <li><a href="publications.html" class="nav-link">Publications</a></li>
-                <li><a href="software.html" class="nav-link">Software</a></li>
-                <li><a href="../docs/annadate_cv.pdf" class="nav-link">CV</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="software.html" aria-current="page">Software</a></li>
+                <li><a href="../docs/annadate_cv.pdf" class="nav-cv">CV</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="page-header">
-        <div class="container">
+    <main id="main">
+
+        <section class="page-hero wrap">
+            <p class="eyebrow">Software</p>
             <h1>Software</h1>
-            <p>Atmospheric modeling, Greenhouse gas emissions, Inverse modeling</p>
-        </div>
-    </div>
+            <p class="section-lede">Tools and code for atmospheric modelling, greenhouse gas emissions and inverse modelling.</p>
+        </section>
+        <canvas id="footerStripes" class="page-stripes" aria-hidden="true"></canvas>
 
-<div class="under-construction">
-    <div class="uc-graphic">
-        <div class="uc-icon">🚧</div>
-        <div class="uc-bar">
-            <div class="uc-progress"></div>
-        </div>
-        <div class="uc-dots">
-            <span></span><span></span><span></span>
-        </div>
-    </div>
+        <section class="page-body wrap">
+            <div class="card notice">
+                <h2>Coming soon</h2>
+                <p>
+                    This page is being updated, and new tools will be added here shortly.
+                    In the meantime, you can find my code on GitHub.
+                </p>
+                <a class="btn btn-ghost" href="https://github.com/saurabh-annadate" target="_blank" rel="noopener">github.com/saurabh-annadate</a>
+            </div>
+        </section>
 
-<h2>Page Under Construction</h2>
-    <p>
-        This page is currently being updated and is not yet available.
-        Please check back soon, new content will be added shortly.
-    </p>
-</div>
+    </main>
 
-<style>
-.under-construction{
-    max-width: 700px;
-    margin: 60px auto;
-    padding: 40px 30px;
-    text-align: center;
-    border-radius: 16px;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    backdrop-filter: blur(8px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    font-family: Arial, sans-serif;
-}
-
-.under-construction h2{
-    font-size: 1.8rem;
-    margin: 15px 0 10px 0;
-}
-
-.under-construction p{
-    font-size: 1.05rem;
-    opacity: 0.9;
-    line-height: 1.5;
-}
-
-.uc-graphic{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 14px;
-    margin-bottom: 20px;
-}
-
-.uc-icon{
-    font-size: 3rem;
-    animation: bounce 1.4s infinite;
-}
-
-.uc-bar{
-    width: 220px;
-    height: 10px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: rgba(255,255,255,0.15);
-    border: 1px solid rgba(255,255,255,0.25);
-}
-
-.uc-progress{
-    height: 100%;
-    width: 45%;
-    border-radius: 10px;
-    background: linear-gradient(90deg, #ffb703, #fb8500);
-    animation: loading 2.5s infinite;
-}
-
-.uc-dots span{
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin: 0 4px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.6);
-    animation: blink 1.2s infinite;
-}
-
-.uc-dots span:nth-child(2){
-    animation-delay: 0.2s;
-}
-.uc-dots span:nth-child(3){
-    animation-delay: 0.4s;
-}
-
-@keyframes loading{
-    0% { transform: translateX(-100%); }
-    50% { transform: translateX(80%); }
-    100% { transform: translateX(-100%); }
-}
-
-@keyframes blink{
-    0%, 100% { opacity: 0.2; transform: scale(0.8); }
-    50% { opacity: 1; transform: scale(1.2); }
-}
-
-@keyframes bounce{
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-}
-</style>
-
-<footer class="footer">
-        <div class="container">
-            <div class="footer-bottom">
-                <p>&copy; 2026 Saurabh Annadate · Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="wrap footer-grid">
+            <div>
+                <h2 class="footer-title">Let’s talk about emissions, data or collaboration.</h2>
+                <a class="btn btn-primary" href="mailto:saurabh.annadate@universityofgalway.ie">saurabh.annadate@universityofgalway.ie</a>
+            </div>
+            <div class="footer-info">
+                <p>
+                    Centre for Climate and Air Pollution Studies, Ryan Institute<br>
+                    School of Natural Sciences, Physics<br>
+                    University of Galway, Ireland
+                </p>
+                <ul class="footer-links">
+                    <li><a href="https://scholar.google.com/citations?user=DygyyEMAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                    <li><a href="https://orcid.org/0000-0002-0426-5431" target="_blank" rel="noopener">ORCID</a></li>
+                    <li><a href="https://github.com/saurabh-annadate" target="_blank" rel="noopener">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/saurabh-annadate-phd-468897138/" target="_blank" rel="noopener">LinkedIn</a></li>
+                </ul>
             </div>
         </div>
+        <div class="wrap footer-bottom">
+            <p>&copy; 2026 Saurabh Annadate · A lightweight site with no trackers, hosted on <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> · Climate data: <a href="https://berkeleyearth.org/" target="_blank" rel="noopener">Berkeley Earth</a></p>
+        </div>
     </footer>
-    <script src="../js/main.js"></script>
+
+    <script src="../js/climate-stripes.js"></script>
+    <script src="../js/site.js"></script>
 </body>
+</html>
