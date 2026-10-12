@@ -168,10 +168,12 @@ h3 { font-size: 1.25rem; }
 }
 .brand:hover { color: var(--ink); }
 .brand-mark {
-    width: 22px; height: 22px; border-radius: 50%;
-    background: linear-gradient(90deg, #2166ac 0 25%, #92c5de 25% 50%, #f4a582 50% 75%, #b2182b 75%);
-    box-shadow: inset 0 0 0 1px rgba(0,0,0,.08);
+    display: inline-flex; align-items: baseline;
+    font-family: 'Italiana', var(--font-display); font-weight: 400; font-size: 1.75rem; line-height: 1;
+    -webkit-text-stroke: .012em currentColor;
 }
+.brand-s { color: var(--accent); }
+.brand-a { color: var(--warm); opacity: .92; margin-left: -.3em; }
 
 .nav-menu { display: flex; align-items: center; gap: .25rem; }
 .nav-menu a {
