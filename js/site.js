@@ -1,5 +1,5 @@
 /**
- * Shared page interactions: sticky header state, mobile menu, reveal on scroll.
+ * Shared page interactions: sticky header state, mobile menu, theme switch, reveal on scroll.
  */
 (function () {
     'use strict';
@@ -8,6 +8,24 @@
         const header = document.getElementById('siteHeader');
         const toggle = document.getElementById('navToggle');
         const menu = document.getElementById('navMenu');
+
+        // Light / dark switch: starts from the system setting, remembers the visitor's choice
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            const root = document.documentElement;
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)');
+            const current = () => root.getAttribute('data-theme') || (systemDark.matches ? 'dark' : 'light');
+            const label = () => themeToggle.setAttribute('aria-label',
+                current() === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+            label();
+            if (systemDark.addEventListener) systemDark.addEventListener('change', label);
+            themeToggle.addEventListener('click', () => {
+                const next = current() === 'dark' ? 'light' : 'dark';
+                root.setAttribute('data-theme', next);
+                try { localStorage.setItem('theme', next); } catch (e) {}
+                label();
+            });
+        }
 
         // Header border once the page scrolls
         const onScroll = () => header && header.classList.toggle('is-scrolled', window.scrollY > 8);
